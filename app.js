@@ -7,10 +7,10 @@ function addTodo() {
     console.log(arr);
     updatetodo()
 
-    
+
 }
 
-function updatetodo(){
+function updatetodo() {
     div.innerHTML = ''
 
     for (let i = 0; i < arr.length; i++) {
@@ -33,13 +33,13 @@ function updatetodo(){
 
 
 function deleteTodo(index) {
-    
+
     arr.splice(index, 1);
     updatetodo()
-    
+
 }
-function editTodo() {
+function editTodo(index) {
     const updatedVal = prompt('enter updated value');
     arr.splice(index, 1, updatedVal);
-    editTodo()
+    updatetodo()
 }
