@@ -1,0 +1,12 @@
+@font-face {
+
+    font-family: futurak;
+    src: url(./fonts/futurak.ttf);
+
+}
+
+
+#Main-heading {
+    font-family: futurak;
+    color: #7330fa;
+}
